@@ -1,12 +1,24 @@
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
- 
-<p>
-  <strong>Text:</strong>
-  <%= @article.text %>
-</p>
-<div><%= link_to 'Destroy', @article,
-                method: :delete,
-                data: { confirm: 'Are you sure?' } %></div>
+<div class="container">
+  <h1 class="hero_title"><%= image_tag 'logo.png' %></h1>
+  <article class="show">
+    <header class="article_titleBlock">
+      <p class="article_date"><%= Date.current.strftime('%Y/%m/%d') %></p>
+      <h2 class="article_title">
+        <%= @article.title %>
+      </h2>
+    </header>
+    <main class="article_text">
+      <p>
+        <%= simple_format(@article.text) %>
+      </p>
+    </main>
+    <footer>
+    <div><%= link_to '削除', @article,
+                      method: :delete,
+                      data: { confirm: 'Are you sure?' } %></div>
+    </footer>
+  </article>
+  <div class="article_buttonArea"><%= link_to '記事一覧へ戻る', articles_path, class:'link_back' %></div>
+</div>
+
+
