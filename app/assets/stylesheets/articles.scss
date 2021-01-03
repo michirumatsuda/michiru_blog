@@ -1,0 +1,100 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+$black: #121212;
+$main-color: #67bdca;
+
+body {
+  margin: 0;
+}
+
+.container {
+  color: $black;
+  background-color: $main-color;
+  height: auto;
+  padding: 40px 0;
+}
+
+.hero {
+  margin-bottom: 40px;
+}
+
+.hero_title {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  img {
+    width: 100%;
+  }
+}
+
+.hero_copy {
+  text-align: center;
+}
+
+.top_article {
+  background-color: #fff;
+  padding: 40px 30px 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.top_article_date {
+  margin: 0 0 10px;
+}
+
+.top_article_title {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: $black;
+}
+
+.top_article_block {
+  margin-bottom: 20px;
+}
+
+.top_profile{
+  margin-left: 40px;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 200px;
+}
+
+.top_profile_headline {
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.top_profile_image {
+  width: 200px;
+  margin: 0;
+  img {
+    width: 100%;
+  }
+}
+
+.top_layout {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.top_profile_detail {
+  list-style: none;
+  padding: 0;
+  li {
+    margin-bottom: 10px;
+  }
+  .auther_name {
+    font-weight: bold;
+  }
+  .profile_text {
+    font-size: 0.875rem;
+    span {
+      font-weight: bold;
+    }
+  }
+  .profile_hobby {
+    font-size: 0.875rem;
+  }
+}

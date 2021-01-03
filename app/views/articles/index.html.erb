@@ -1,0 +1,36 @@
+<article class="container">
+  <div class="hero">
+    <h1 class="hero_title"><%= image_tag 'logo.png' %></h1>
+    <p class="hero_copy">フロントエンドエンジニアの雑多なブログ</p>
+  </div>
+  <div class="top_layout">
+    <div class="top_article">
+      <% @articles.each do |article| %>
+        <div class="top_article_block">
+          <div class="top_article_link">
+            <p class="top_article_date"><%= Date.current.strftime('%Y/%m/%d') %></p>
+            <%= link_to article.title, article_path(article) ,class:'top_article_title'%>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="top_profile">
+      <p class="top_profile_headline">
+        プロフィール
+      </p>
+      <p class="top_profile_image">
+        <%= image_tag 'profile_photo.jpg' %>
+      </p>
+      <ul class="top_profile_detail">
+        <li class="auther_name">ミチル</li>
+        <li class="profile_text">アパレルメーカーで生産管理３年努めた後、職業訓練を経て2018年よりWEB業界に転身しました。
+        今はフロントエンドを中心に日々修行中です。<br>
+        </li>
+        <li class="profile_text">
+          <span>使用言語・フレームワーク：</span>
+          html/css/scss/React.js/<br>next.js/Ruby on Rails
+        </li>
+      </ul>
+    </div>
+  </div>
+</article>

@@ -1,24 +1,21 @@
-# README
+# DB設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## form テーブル
 
-Things you may want to cover:
+makers
 
-* Ruby version
+| カラム名 | 型 | 説明 |
+| --- | --- | --- |
+| company_name | text | `企業名(お名前)` |
+| tel | integer | `電話番号` |
+| email | text | `メールアドレス` |
+| user_name | text | `ご担当社様氏名` |
+| business_field_other | text | `その他の事業分野の場合自由入力` |
 
-* System dependencies
 
-* Configuration
+business_genre
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+| カラム名 | 型 | 説明 |
+| --- | --- | --- |
+| id | integer | `番号` |
+| name | text | `名前` |
